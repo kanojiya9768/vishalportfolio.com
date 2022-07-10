@@ -6,6 +6,8 @@
 
             status.style.display = 'flex';
             status.innerHTML = "Online";
+             status.style.color = 'green';
+            status.style.border = '2px solid green';
 
             setTimeout(()=>{
               status.style.display = 'none';
