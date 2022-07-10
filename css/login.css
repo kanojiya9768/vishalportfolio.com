@@ -1,0 +1,295 @@
+*{
+    margin: 0;padding: 0;box-sizing: border-box;
+    animation: bounce-top 2s both;
+}
+
+
+body{
+    width: 100vw;
+    height: 100vh;
+    /* background-image: url("https://c.neh.tw/thumb/f/720/f1b13e444edd49969039.jpg"); */
+    background-image: linear-gradient(to right top, #830497, #8f00ad, #9900c5, #a300dd, #ab05f7);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    animation: color-change-5x 25s linear infinite alternate both;
+}
+
+
+@keyframes bounce-top {
+  0% {
+    -webkit-transform: translateY(-45px);
+            transform: translateY(-45px);
+    -webkit-animation-timing-function: ease-in;
+            animation-timing-function: ease-in;
+    opacity: 1;
+  }
+  24% {
+    opacity: 1;
+  }
+  40% {
+    -webkit-transform: translateY(-24px);
+            transform: translateY(-24px);
+    -webkit-animation-timing-function: ease-in;
+            animation-timing-function: ease-in;
+  }
+  65% {
+    -webkit-transform: translateY(-12px);
+            transform: translateY(-12px);
+    -webkit-animation-timing-function: ease-in;
+            animation-timing-function: ease-in;
+  }
+  82% {
+    -webkit-transform: translateY(-6px);
+            transform: translateY(-6px);
+    -webkit-animation-timing-function: ease-in;
+            animation-timing-function: ease-in;
+  }
+  93% {
+    -webkit-transform: translateY(-4px);
+            transform: translateY(-4px);
+    -webkit-animation-timing-function: ease-in;
+            animation-timing-function: ease-in;
+  }
+  25%,
+  55%,
+  75%,
+  87% {
+    -webkit-transform: translateY(0px);
+            transform: translateY(0px);
+    -webkit-animation-timing-function: ease-out;
+            animation-timing-function: ease-out;
+  }
+  100% {
+    -webkit-transform: translateY(0px);
+            transform: translateY(0px);
+    -webkit-animation-timing-function: ease-out;
+            animation-timing-function: ease-out;
+    opacity: 1;
+  }
+}
+
+
+
+@keyframes color-change-5x {
+    0% {
+      background: #e502fa;
+    }
+    10% {
+      background: #9c02f5;
+    }
+    20% {
+      background: #8f0393;
+    }
+    30% {
+      background: #4c014d;
+    }
+    40% {
+      background: #8d01f8;
+    }
+    50% {
+      background-color: rgb(248, 3, 236);
+    }
+    60% {
+      background-color: rgb(4, 105, 247);
+    }
+    70%{
+      background-color:rgb(8, 251, 231);
+  }
+  80%{
+      background-color:rgb(47, 1, 252);
+  }
+  90%{
+      background-color:rgb(70, 40, 203);
+  }
+  100%{
+      background-color:rgb(82, 1, 153);
+  }
+  }
+
+
+
+.container{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+form{
+    width: 450px;
+    height: 450px;
+    border: 2px solid rgb(190, 7, 7);
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    text-align: center;
+    background-color: black;
+    opacity: .5;
+    animation: shake 1s infinite;
+    box-shadow:0 5px 5px 5px #fff;
+    cursor: pointer;
+    overflow-y: scroll;
+  }
+
+form::-webkit-scrollbar{
+  display: none;
+}
+
+form:hover{
+     animation:none;
+}
+
+
+
+
+form > .head {
+    background-color: black;
+    width: 100%;
+    border: 2px solid rgb(255, 7, 7);
+   border-top-left-radius:10px ;
+    border-top-right-radius:10px ;
+    opacity: .8;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 2px;
+}
+form > .head > h1{
+    color: rgb(255, 254, 255);
+    font-size: 6vh;
+    font-family: sans-serif;
+    letter-spacing: 1px;
+    font-weight: bold;
+}
+
+form > .form_item{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 4rem;
+}
+
+form > .form_item > div{
+             margin-bottom: 30px;
+             background-color: transparent;
+             width: 100%;
+             text-align: center;
+}
+
+form > .form_item > .User > input{
+    width: 80%;
+    border: none;
+    outline-width: 0;
+    background-color: rgb(248, 241, 241);
+    font-size: 3.5vh;
+    color: rgb(10, 10, 10);
+    font-weight: bold;
+    border-bottom: 2px solid black;
+    text-align: center;
+    padding: 5px;
+    border-radius: 999px;
+}
+form > .form_item > .pass > input{
+    width: 80%;
+    border: none;
+    outline-width: 0;
+    background-color: rgb(248, 241, 241);
+    font-size: 3.5vh;
+    color: rgb(10, 10, 10);
+    font-weight: bold;
+    border-bottom: 2px solid black;
+    text-align: center;
+    padding: 5px;
+    border-radius: 999px;
+}
+form > .form_item > .btn > input{
+    width: 25vw;
+    border: none;
+    outline-width: 0;
+    background-color: rgb(248, 241, 241);
+    font-size: 3.5vh;
+    color: rgb(253, 249, 249);
+    font-weight: bold;
+    border-bottom: 2px solid black;
+    text-align: center;
+    padding: 5px;
+    border-radius: 999px;
+    color: black;
+    cursor: pointer;
+}
+
+form > .form_item > .btn > input:hover{
+    border-top: 1px solid red;
+    border-bottom: 1px solid red;
+    border-left: none;
+    border-right: none;
+    background-color: transparent;
+    color: #fff;
+}
+
+
+.usefull_link{
+  display: flex;
+  justify-content: space-around;
+}
+
+#forgot,#signup{
+  text-decoration: none;
+  color: rgb(7, 7, 7);
+  font-size: 2.6vh;
+  border: 1px solid rgb(249, 4, 249);
+  padding: 4px;
+  border-radius: 5px;
+  background-color: rgb(251, 249, 249);
+  font-weight:bold;
+}
+
+#signup{
+  padding: 4px 10px;
+}
+
+#forgot:hover{
+  background-color: transparent;
+  color: #fff;
+}
+#signup:hover{
+  background-color: transparent;
+  color: #fff;
+}
+
+
+
+@media (max-width:780px) {
+     form{
+          width: 70vw;
+          height: 370px;
+     }
+
+     form > .head > h1{
+         font-size: 5vh;
+     }
+
+     form > .form_item >  .User > input{
+         width: 50vw;
+         font-size: 3vh;
+     }
+     form > .form_item >  .pass > input{
+         width: 50vw;
+         font-size: 3vh;
+     }
+
+     form > .form_item > .btn > input{
+         font-size: 2.9vh;
+         width: 30vw;
+     }
+}
+
+
+
+
+
+

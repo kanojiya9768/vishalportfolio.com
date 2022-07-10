@@ -1,0 +1,203 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+.box{
+    width: 100vw;
+    height: 100vh;
+    background-color:#fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* background: url("https://c.neh.tw/thumb/f/720/f1b13e444edd49969039.jpg"); */
+    background-image: linear-gradient(to right top, #830497, #8f00ad, #9900c5, #a300dd, #ab05f7);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    animation: color-change-5x 25s linear alternate both;
+}
+
+
+
+@keyframes color-change-5x {
+  0% {
+    background: #e502fa;
+  }
+  10% {
+    background: #9c02f5;
+  }
+  20% {
+    background: #8f0393;
+  }
+  30% {
+    background: #4c014d;
+  }
+  40% {
+    background: #8d01f8;
+  }
+  50% {
+    background-color: rgb(248, 3, 236);
+  }
+  60% {
+    background-color: rgb(4, 105, 247);
+  }
+  70%{
+    background-color:rgb(8, 251, 231);
+}
+80%{
+    background-color:rgb(47, 1, 252);
+}
+90%{
+    background-color:rgb(70, 40, 203);
+}
+100%{
+    background-color:rgb(82, 1, 153);
+}
+}
+
+
+
+.row{
+   display: flex;
+  width: 95vw;
+  height:80vh;
+  padding: 5px;
+  align-items: center;
+  margin-bottom: 7rem 0;
+  border-radius: 10px;
+  background-color: black;
+  opacity: .6;
+  animation: bounce-top 1.5s both ;
+}
+
+@keyframes bounce-top {
+  0% {
+    -webkit-transform: translateY(-45px);
+            transform: translateY(-45px);
+    -webkit-animation-timing-function: ease-in;
+            animation-timing-function: ease-in;
+    opacity: 1;
+  }
+  24% {
+    opacity: 1;
+  }
+  40% {
+    -webkit-transform: translateY(-24px);
+            transform: translateY(-24px);
+    -webkit-animation-timing-function: ease-in;
+            animation-timing-function: ease-in;
+  }
+  65% {
+    -webkit-transform: translateY(-12px);
+            transform: translateY(-12px);
+    -webkit-animation-timing-function: ease-in;
+            animation-timing-function: ease-in;
+  }
+  82% {
+    -webkit-transform: translateY(-6px);
+            transform: translateY(-6px);
+    -webkit-animation-timing-function: ease-in;
+            animation-timing-function: ease-in;
+  }
+  93% {
+    -webkit-transform: translateY(-4px);
+            transform: translateY(-4px);
+    -webkit-animation-timing-function: ease-in;
+            animation-timing-function: ease-in;
+  }
+  25%,
+  55%,
+  75%,
+  87% {
+    -webkit-transform: translateY(0px);
+            transform: translateY(0px);
+    -webkit-animation-timing-function: ease-out;
+            animation-timing-function: ease-out;
+  }
+  100% {
+    -webkit-transform: translateY(0px);
+            transform: translateY(0px);
+    -webkit-animation-timing-function: ease-out;
+            animation-timing-function: ease-out;
+    opacity: 1;
+  }
+}
+
+
+
+.row > .left{
+    float: left;
+    width: 50%;
+    height: 100%;
+    margin: 10px;
+    box-shadow: 0 5px 5px black;
+    background-image: url("https://wallpaperaccess.com/full/5243054.jpg");
+    border-radius: 10px;
+    background-position:center;
+     overflow: hidden;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+
+.row > .right{
+    float: right;
+    width: 70%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: end;
+    margin-left: 10px;
+  margin-right: 10px;
+    overflow: auto;
+}
+
+
+.row > .right > .head {
+      /* border: 5px solid yellow; */
+      padding: 1vw 7vw;
+      color: #fff;
+      text-transform: capitalize;
+}
+
+
+@media (max-width:678px){
+    .row{
+       display: flex;
+       flex-direction: column;
+  width: 90vw;
+  height:80vh;
+  align-items: center;
+  /* margin-bottom: 7rem 0; */
+  border-radius: 10px;
+  overflow: hidden;
+  margin-top:10px;
+  border: 2px solid rgb(94, 4, 4);
+    }
+
+    .row > .left{
+        width: 90%;
+        height: 500vh;
+        margin-top: 5px;
+        overflow: hidden;
+        background-image: url("https://wallpaperaccess.com/full/5320571.jpg");
+        background-size: contain;
+        background-position: top;
+        margin-bottom: 30px;
+    }
+
+    .row > .right{
+    width: 70%;
+    height: 250vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 210px;
+}
+
+
+}

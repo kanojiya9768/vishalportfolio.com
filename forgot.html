@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible"
+        content="IE=edge">
+    <meta name="viewport"
+        content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/login.css">
+    <link rel="stylesheet" href="css/status.css">
+    <title>Reset Password page</title>
+</head>
+
+<body>
+
+    <div id="status"></div> 
+
+    <div class="container">
+
+        <p id="redirect"
+            style="margin-bottom:10px; display: none;">
+            wait for 5 sec...u will be re-directed
+            to login page</p>
+
+        <div class="alert" id="alert_box"
+            style="font-size:20px;display: flex; justify-content: center; align-items: center; margin-bottom: 20px; flex-wrap: wrap;">
+            <span id="alert_msg"
+                style=" background-color:rgb(0, 255, 68); padding: 5px; border-radius: 5px; margin-right: 6px; margin-top: 10px;">Reset
+                successfully</span>
+        </div>
+
+        <form id="Forgot">
+            <div class="head">
+                <h1>Forgot Pass</h1>
+            </div>
+
+            <div class="form_item">
+
+                <div class="User">
+                    <input type="text" name="User"
+                        id="User_Name"
+                        placeholder="Enter UserName"
+                        required>
+                </div>
+                <div class="pass">
+                    <input type="password"
+                        name="password"
+                        id="password"
+                        placeholder="Enter New pass"
+                        required>
+                </div>
+
+
+                <div class="btn">
+                    <input type="submit"
+                        id="submit" value="Reset">
+                    <!-- <button type="submit" id="submit">Submit</button> -->
+                </div>
+
+
+                <div class="usefull_link">
+                    <div class="login">
+                        <a href="index.html"
+                            id="forgot">Click To
+                            Login</a>
+                    </div>
+
+                    <div class="signup">
+                        <a href="Register.html"
+                            id="signup">Sign
+                            Up</a>
+                    </div>
+                </div>
+            </div>
+        </form>
+    </div>
+
+
+    <script
+        src="https://cdnjs.cloudflare.com/ajax/libs/firebase/7.14.1-0/firebase.js"></script>
+    <script src="forgot.js"></script>
+
+    <script>
+        document.getElementById('alert_box').style.display = 'none';
+    </script>
+
+
+<script src="on_off.js"></script>
+
+
+</body>
+
+</html>

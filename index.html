@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible"
+        content="IE=edge">
+    <meta name="viewport"
+        content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/login.css">
+    <link rel="stylesheet" href="css/status.css">
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+        integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+        crossorigin="anonymous"
+        referrerpolicy="no-referrer" />
+    <title>Login page</title>
+
+
+</head>
+
+<body>
+
+
+    
+    <div id="status"></div>    
+
+
+
+    <div class="container">
+
+        <div class="alert" id="alert_box"
+            style="font-size:20px;display: flex; justify-content: center; align-items: center; margin-bottom: 20px; flex-wrap: wrap;">
+            <span id="alert_msg"
+                style=" background-color: red; padding: 5px; border-radius: 10px; margin-right: 6px;">Wrong
+                User credentials...Try
+                Again</span>
+        </div>
+
+        <form id="login_form">
+            <div class="head">
+                <h1>Login</h1>
+            </div>
+
+            <div class="form_item">
+
+                <div class="User">
+                    <input type="text" name="User"
+                        id="User_Name"
+                        placeholder="Enter UserName"
+                        required>
+                </div>
+                <div class="pass">
+                    <input type="password"
+                        name="password"
+                        id="password"
+                        placeholder="Enter pass"
+                        required>
+                </div>
+
+
+                <div class="btn">
+                    <input type="submit"
+                        id="submit" value="LOGIN">
+                    <!-- <button type="submit" id="submit">Submit</button> -->
+                </div>
+
+
+                <div class="usefull_link">
+                    <div class="forgot">
+                        <a href="forgot.html"
+                            id="forgot">Forgot
+                            Pass</a>
+                    </div>
+
+                    <div class="signup">
+                        <a href="Register.html"
+                            id="signup">Sign
+                            Up</a>
+                    </div>
+                </div>
+            </div>
+        </form>
+    </div>
+
+
+
+
+
+
+
+
+    <script>
+
+        let submitform = (e) => {
+
+            e.preventDefault();
+            let user = document.getElementById('User_Name').value;
+            let pass = document.getElementById('password').value;
+
+
+
+            if (user == "kanojiya8097" && pass == "Vishal@1234") {
+                window.location.assign('https://kanojiya9768.github.io/vishalportfolio.com/Home.html');
+            } else if (user == "kanojiya9768" && pass == "Rohit@578") {
+                window.location.assign('https://kanojiya9768.github.io/vishalportfolio.com/Home.html')
+            } else if (user == "billion_dollor_boy" && pass == "Rakesh@123") {
+                window.location.assign('https://kanojiya9768.github.io/vishalportfolio.com/Home.html')
+            } else {
+                document.getElementById('alert_box').style.display = 'flex';
+            }
+
+
+
+            //disappear alert
+            function disappear_alert() {
+                document.getElementById('alert_box').style.display = 'none';
+            }
+
+            setTimeout(disappear_alert, 5000);
+        }
+
+        document.getElementById('login_form').addEventListener('submit', submitform);
+
+
+
+        document.getElementById('alert_box').style.display = 'none';
+
+    </script>
+
+    <script src="on_off.js"></script>
+
+</body>
+
+</html>
