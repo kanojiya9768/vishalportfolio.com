@@ -31,7 +31,6 @@ function submitform(e){
     //call savemassage function so that our data can stored in database
     saveMassage(User,password);
 
-    document.getElementById('alert_box').style.display='flex';
     document.getElementById('redirect').style.display = 'block';
     
     setTimeout(()=>{
