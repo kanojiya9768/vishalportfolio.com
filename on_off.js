@@ -4,14 +4,7 @@
         var status = document.getElementById("status");
         if(navigator.onLine) {
 
-            status.style.display = 'flex';
-            status.innerHTML = "Online";
-             status.style.color = 'green';
-            status.style.border = '2px solid green';
-
-            setTimeout(()=>{
-              status.style.display = 'none';
-            },2000);
+           console.log('back again online');
 
         } else {
             status.style.display = 'flex';
