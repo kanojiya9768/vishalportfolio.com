@@ -25,15 +25,6 @@
 
     <header class="header">
 
-        <div id="status"></div> 
-
-        <div class="alert" id="alert_box"
-            style="font-size:20px;display: flex; justify-content: center; align-items: center; margin-bottom: 20px; flex-wrap: wrap;">
-            <span id="alert_msg"
-                style=" background-color:greenyellow; padding: 5px; border-radius: 5px; margin-right: 6px; margin-top: 10px;">logged
-                in successfully.</span>
-        </div> 
-
         <div class="nav">
             <h2>
                 <li><a href="index.html"><i
@@ -631,24 +622,6 @@
             </div>
         </div>
     </footer>
-
-
-
-    <script>
-        document.getElementById('alert_box').style.display = 'none';
-
-        window.addEventListener('load', () => {
-            document.getElementById('alert_box').style.display = 'flex';
-        })
-
-
-        function disappear_alert() {
-            document.getElementById('alert_box').style.display = 'none';
-        }
-
-        setTimeout(disappear_alert,2000)
-
-    </script>
 
 </body>
 
