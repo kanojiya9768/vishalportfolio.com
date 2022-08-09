@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/contact.css">
+    <link rel="icon" type="image/x-icon" href="css/favicon.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css"
+        integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>contact form</title>
+
+</head>
+
+<body>
+
+    <div id="status"></div> 
+
+    <div class="container">
+       
+        <div class="item">
+            <form id="form_data">
+                <h1 style="margin-bottom:30px;" id="head">*_contact_*</h1>
+                <!-- <h3 style="margin-bottom: 30px; font-family: cursive;">fill out the form below for contacting us.</h3> -->
+
+                <input type="text" name="name"  class="input" id="name" required placeholder="Enter Full Name" autocomplete="off">
+
+                <input type="email" id="email" class="input" required placeholder="Enter Email Id" autocomplete="off" style="margin-top: 20px;">
+
+                <input type="number" class="input" id="number" required placeholder="Enter Phone N" autocomplete="off" style="margin-top: 20px; ">
+
+                
+                <div id="select" style="margin:15px auto; border: 2px solid rgb(255, 255, 255); padding: 5px;">
+                    <p style="text-decoration: underline;">*_Choose Photo_*</p> 
+                        <input type="file" class="input" id="photo" required style="margin-top: 20px; font-size: 2.6vh;">
+                </div>
+
+
+
+
+                <!-- Male<input type="radio" required name="gender">
+                Female<input type="radio" required name="gender">
+                Other<input type="radio" required name="gender"> -->
+
+                <div id="select" style="margin:15px auto;">
+                    Choose Gender :- 
+                    <select name="gender" id="gender" style="font-size:2.6vh;">
+                        <option value="Male">Male</option>
+                        <option value="Female">female</option>
+                        <option value="Other">Other</option>
+                    </select>
+                </div>
+
+
+                <textarea name="comment" id="comments" cols="50" rows="5"
+                    placeholder="Write Your Message...."></textarea>
+
+
+                <div class="btn">
+                    <!-- <a href="Home.html" onclick="confirm('Are us sure to send message?')"></a> -->
+                    <input type="submit" name="submit" id="submit" value="Submit">
+                    
+                </div>
+
+            </form>
+        </div>
+    </div>
+    </div>
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/firebase/7.14.1-0/firebase.js"></script>
+    <script src="null.js"></script>
+    <script src="on_off.js"></script>
+</body>
+
+</html>

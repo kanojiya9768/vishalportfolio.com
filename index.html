@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/login.css">
+    <link rel="icon" type="image/x-icon" href="css/favicon.png">
+    <script
+    src="https://www.gstatic.com/firebasejs/9.9.1/firebase-app-compat.js"></script>
+<script
+    src="https://www.gstatic.com/firebasejs/9.9.1/firebase-firestore-compat.js"></script>
+<script
+    src="https://www.gstatic.com/firebasejs/9.9.1/firebase-auth-compat.js"></script>
+<title>Login page</title>
+    <title>Login</title>
+
+    <style>
+        .captcha{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin: 30px auto;
+            border: 2px solid #ddd;
+            border-radius: 5px;
+            width: 74%;
+            background-color: rgb(105, 100, 100);
+        }
+
+        .captcha > p{
+            color: #f9f9f9;
+            padding-left: 5px;
+            font-weight: 600;
+            font-size: 2.6vh;
+            letter-spacing: 1px;
+        }
+
+        .captcha > input{
+            border-radius: 0px;
+            text-transform: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <form class="content" id="Login"> 
+            <div class="container">
+              <h1 id="heading">Login</h1>
+              <p style="color:rgb(132, 124, 124); margin:5px 0px 25px 0px; text-align: center;">Please fill this form to Login into account.</p>
+              <input type="email" placeholder="Enter Email" name="email" id="email" required autocomplete="off">
+          
+              <input type="password" placeholder="Enter Password" name="psw" id="psw" required>
+
+              <div class="captcha">
+                <p id="catchaval"></p>
+                <input type="text" id="captcha_input" placeholder="Enter Captcha">
+              </div>
+          
+              <button type="submit" class="registerbtn" id="btn">Login</button>
+            </div>
+            
+            <div class="container signin" style="margin:30px 0px;">
+              <p id="DontHave" style="margin-top:85px;">Don't have an account? <a href="Register.html">Sign up</a>.</p>
+              <p id="forgot_pass" style="color:#f9f9f9;">Forgot Password? <a href="forgot.html">Reset</a>.</p>
+            </div>
+          </form>
+    </div>
+
+    
+<script
+src="https://cdnjs.cloudflare.com/ajax/libs/firebase/7.14.1-0/firebase.js"></script>
+<script src="signin.js"></script>
+
+
+</body>
+</html>

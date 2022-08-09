@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+        content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible"
+        content="ie=edge">
+    <link rel="stylesheet"
+        href="css/Code_editor.css">
+     <link rel="icon" type="image/x-icon" href="css/compiler_favicon.png">
+    <title>Live Code Editor</title>
+
+</head>
+
+<body>
+    <div class="code_editor">
+        <div class="code">
+
+            <div class="btn_box">
+                <button class="btn" onclick="show_html();">HTML</button>
+                <button class="btn"
+                    onclick="show_css();">CSS</button>
+                <button class="btn" onclick="show_js();">JS</button>
+            </div>
+
+            <div class="html-code" id="html_code">
+                <h2 id="html">HTML5</h2>
+                <textarea class="textarea"
+                    placeholder="Start Coding..">
+                </textarea>
+            </div>
+
+            <div class="css-code" id="css_code">
+                <h2 id="css">CSS3</h2>
+                <textarea class="textarea"
+                    placeholder="Start Coding..">
+
+                </textarea>
+            </div>
+
+            <div class="js-code" id="js_code">
+                <h2 id="js">JAVASCRIPT</h2>
+                <textarea class="textarea"
+                    placeholder="Start Coding.."
+                    spellcheck="false">
+
+                    alert("hello world");
+                </textarea>
+
+
+            </div>
+        </div><br>
+        <div class="btn_run"><button id="run_btn">RUN</button></div>        <iframe id="result"></iframe>
+    </div>
+
+    <script src="run.js"></script>
+
+    <script>
+
+        function show_html() {
+            document.getElementById('html_code').style.display = 'block';
+            document.getElementById('html').style.color = 'orangered';
+            document.getElementById('css_code').style.display = 'none'
+            document.getElementById('js_code').style.display = 'none';
+        }
+
+        function show_css() {
+            document.getElementById('css_code').style.display = 'block'
+            document.getElementById('css').style.color = 'blue';
+            document.getElementById('html_code').style.display = 'none';
+            document.getElementById('js_code').style.display = 'none';
+        }
+
+        function show_js() {
+            document.getElementById('js_code').style.display = 'block';
+            document.getElementById('js').style.color = 'yellow';
+            document.getElementById('result').style.marginTop = '0';
+            document.getElementById('css_code').style.display = 'none'
+            document.getElementById('html_code').style.display = 'none';
+        }
+    </script>
+</body>
+
+</html>

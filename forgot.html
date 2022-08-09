@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/forgot.css">
+    <link rel="icon" type="image/x-icon" href="img/favicon.jpg">
+    <script
+    src="https://www.gstatic.com/firebasejs/9.9.1/firebase-app-compat.js"></script>
+<script
+    src="https://www.gstatic.com/firebasejs/9.9.1/firebase-firestore-compat.js"></script>
+<script
+    src="https://www.gstatic.com/firebasejs/9.9.1/firebase-auth-compat.js"></script>
+    <title>Reset Password</title>
+</head>
+<body>
+    <div class="container">
+        <form class="content" id="Forgot"> 
+            <div class="container">
+              <h1 id="heading">Reset</h1>
+              <p style="color:rgb(132, 124, 124); margin:5px 0px 25px 0px; text-align: center;">Please fill in this form to Reset Your Password.</p>
+              <input type="email" placeholder="Enter Email" name="email" id="email" required autocomplete="off">
+          
+              <button type="submit" class="registerbtn" id="btn">Reset</button>
+            </div>
+            
+            <div class="container signin" style="margin:30px 0px;">
+              <p id="already_link" style="margin-top:50px;">Login Again : <a href="index.html">Sign in</a>.</p>
+            </div>
+          </form>
+    </div>
+
+
+    
+    <script
+        src="https://cdnjs.cloudflare.com/ajax/libs/firebase/7.14.1-0/firebase.js"></script>
+    <!-- <script src="forgot.js"></script> -->
+    <script src="reset_password.js"></script>
+</body>
+</html>
